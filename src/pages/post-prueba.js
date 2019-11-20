@@ -73,7 +73,7 @@ export default () => {
               <p className="is-size-5 b7">
               
 
-                Esta es la hermosa introducción al post. Se tienen que escribir muchas cosas bonitas. 
+                Esta es la hermosa introducción al post. Se tienen que escribir muchas cosas bonitas. Si sigo escribiendo, tarde o temprano tendré un post bien elaborado.
 
               </p>
             </div>
