@@ -1,139 +1,111 @@
-import React from 'react';
+import React from "react";
 import {
-	FaSass,
-	FaHtml5,
-	FaReact,
-	FaMobileAlt,
-	FaRocket,
-	FaOsi
-} from 'react-icons/fa';
+  FaKey,
+  FaComments,
+  FaUserLock,
+  FaHourglassStart,
+  FaAtom,
+  FaRocket
+} from "react-icons/fa";
 
-import './style.scss';
-import Emoji from './emoji';
+import "./style.scss";
+import "./columns.scss";
 
 const Midsection = () => (
-	<div>
-		<section className="section">
-			<div className="container">
-				<div className="columns is-multiline">
-					<div className="column is-one-third">
-						<article className="media">
-							<figure className="media-left">
-								<span className="icon is-medium">
-									<FaSass size="fa-2x" color="#d22780" />
-								</span>
-							</figure>
-							<div className="media-content">
-								<div className="content">
-									<h1 className="title is-size-4">Uses Bulma</h1>
-									<p className="subtitle is-size-5">
-										Bulma is an open source CSS framework and used by more than
-										100,000 developers.
-									</p>
-								</div>
-							</div>
-						</article>
-					</div>
-					<div className="column is-one-third">
-						<article className="media">
-							<figure className="media-left">
-								<span className="icon is-medium">
-									<FaHtml5 size="fa-2x" className="has-text-danger" />
-								</span>
-							</figure>
-							<div className="media-content">
-								<div className="content">
-									<h1 className="title is-size-4">JAMStack Solution</h1>
-									<p className="subtitle is-size-5">
-										It’s a new way of building websites and apps that delivers
-										better performance, higher security, lower cost of scaling,
-										and a better developer experience.
-									</p>
-								</div>
-							</div>
-						</article>
-					</div>
-					<div className="column is-one-third">
-						<article className="media">
-							<figure className="media-left">
-								<span className="icon is-medium">
-									<FaReact size="fa-2x" color="#5e227f" />
-								</span>
-							</figure>
-							<div className="media-content">
-								<div className="content">
-									<h1 className="title is-size-4">Gatsby + React?</h1>
-									<p className="subtitle is-size-5">
-										Uses Gatsby's version <code>v2</code>, enjoy the power of
-										the latest web technologies. All set up and waiting for you
-										to start building.
-									</p>
-								</div>
-							</div>
-						</article>
-					</div>
-					<div className="column is-one-third">
-						<article className="media">
-							<figure className="media-left">
-								<span className="icon is-medium">
-									<FaMobileAlt size="fa-2x" color="blue" />
-								</span>
-							</figure>
-							<div className="media-content">
-								<div className="content">
-									<h1 className="title is-size-4">Responsive Design</h1>
-									<p className="subtitle is-size-5">
-										Bulma is based on the Flexbox model and built with Sass. The
-										simplest grid system Just add columns, they will resize
-										themselves, like this website.
-									</p>
-								</div>
-							</div>
-						</article>
-					</div>
+  <div>
+    <section className="section">
 
-					<div className="column is-one-third">
-						<article className="media">
-							<figure className="media-left">
-								<span className="icon is-medium">
-									<FaOsi size="fa-2x" className="has-text-primary" />
-								</span>
-							</figure>
-							<div className="media-content">
-								<div className="content">
-									<h1 className="title is-size-4">Open Source</h1>
-									<p className="subtitle is-size-5">
-										This starter kit is MIT Licensed. Need I say more?
-										<Emoji emoji="🤑" />
-									</p>
-								</div>
-							</div>
-						</article>
-					</div>
-					<div className="column is-one-third">
-						<article className="media">
-							<figure className="media-left">
-								<span className="icon is-medium">
-									<FaRocket size="fa-2x" className="has-text-danger" />
-								</span>
-							</figure>
-							<div className="media-content">
-								<div className="content">
-									<h1 className="title is-size-4">Starter Kit</h1>
-									<p className="subtitle is-size-5">
-										This starter kit is target to developers who are looking
-										forward to use Bulma along with GatsbyJS. You can read more
-										in the <a href="https://gatsbyjs.org">documentation</a> on
-										how to get started.
-									</p>
-								</div>
-							</div>
-						</article>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+      <div className="container">
+        <div className="columns">
+          <div className="column shake">
+            <article className="notification one">
+              <span className="icon is-large has-text-black">
+                <FaKey />
+              </span>
+              <p className="is-size-3">ID Digital </p>
+              <p className="is-size-5">
+                Cada residente tiene una identificación digital que cambia con
+                el tiempo. Gracias a esto, el personal de seguridad puede
+                corroborar fácilmente que es residente aunque venga caminando o
+                en Uber.{" "}
+              </p>
+            </article>
+          </div>
+          <div className="column shake">
+            <article className="notification two">
+              <span className="icon is-large has-text-black">
+                <FaComments />
+              </span>
+              <p className="is-size-3">Notificaciones </p>
+              <p className="is-size-5">
+                Recibe notificaciones junto a toda tu familia para autorizar o
+                rechazar accesos a tu casa desde tu celular. También sabrás
+                cuando tus visitas, proveedores o personal de servicio se
+                retiran del Condominio.
+              </p>
+            </article>
+          </div>
+          <div className="column shake">
+            <article className="notification three">
+              <span className="icon is-large has-text-black">
+                <FaRocket />
+              </span>
+              <p className="is-size-3">Multiplataforma </p>
+              <p className="is-size-5">
+                Puedes descargar nuestra aplicación y además usar nuestro Bot
+                inteligente que te permite gestionar todos nuestros servicios
+                desde apps de mensajería como Telegram o Facebook.{" "}
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="columns">
+          <div className="column shake">
+            <article className="notification four">
+              <span className="icon is-large has-text-black">
+                <FaUserLock />
+              </span>
+              <p className="is-size-3">100% Privado </p>              
+              <p className="is-size-5">
+                Nuestra plataforma y conmutador digital funcionan de tal manera
+                que los guardias nunca tienen acceso a información vital que, en
+                malas manos, puede volverse un auténtico peligro.
+              </p>
+            </article>
+          </div>
+          <div className="column shake">
+            <article className="notification five">
+              <span className="icon is-large has-text-black">
+                <FaHourglassStart />
+              </span>
+              <p className="is-size-3">Eficiencia</p>
+              <p className="is-size-5">
+                Evita con nuestra app llamadas y mensajes al administrador para
+                tareas rutinarias como consultar tu saldo, pre-autorizar
+                visitas, registrar a tu personal de servicio y preguntar por tu
+                paquetería.{" "}
+              </p>
+            </article>
+          </div>
+          <div className="column shake">
+            <article className="notification six">
+              <span className="icon is-large has-text-black">
+                <FaAtom />
+              </span>
+              <p className="is-size-3">Innovación </p>
+              <p className="is-size-5">
+                Todo el tiempo estamos actualizando nuestra app para agregar
+                nuevas características que hagan todavía más seguro el
+                Condominio donde vives con tu familia.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 );
 
 export default Midsection;

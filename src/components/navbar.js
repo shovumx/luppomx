@@ -1,41 +1,28 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
-
+import {Link} from "gatsby";
 import './style.scss';
-import gatsbyLogo from '../images/gatsby-icon.png';
-import bulmaLogo from '../images/bulma-logo.png';
+import './columns.scss';
 
 const Navbar = () => (
-	<div className="hero-head is-hidden-mobile">
-		<nav className="navbar">
-			<div className="container">
-				<div className="navbar-brand">
-					<a
-						className="navbar-item"
-						href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
-					>
-						<img src={gatsbyLogo} alt="Logo-1" />
-						<img src={bulmaLogo} alt="Logo-2" />
-					</a>
-				</div>
-				<div id="navbarMenuHeroA" className="navbar-menu">
-					<div className="navbar-end">
-						<span className="navbar-item">
-							<a
-								className="button is-danger is-inverted"
-								href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
-							>
-								<span className="icon">
-									<FaGithub size="fa-2x" />
-								</span>
-								<span>Download</span>
-							</a>
-						</span>
-					</div>
-				</div>
-			</div>
-		</nav>
+<div className="hero-head">
+	<div className="columns is-mobile is-marginless heading has-text-weight-bold">
+		<div className="column left">
+		<Link to="/" className="navbar-item as-text-grey">Luppo</Link>
+		</div>
+		<div className="column center">
+		<p>
+		<Link to="/caracteristicas" className="navbar-item has-text-black">Características</Link>
+		</p>
+		<p>
+		<Link to="/blog" className="navbar-item has-text-black">Blog</Link>
+		</p>	
+		</div>
+		<div className="column right">
+	<Link to="/contacto" className="navbar-item has-text-grey">Contacto</Link>	
+		</div>
 	</div>
+</div>
 );
 
 export default Navbar;
