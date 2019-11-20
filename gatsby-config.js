@@ -1,16 +1,13 @@
 module.exports = {
 	siteMetadata: {
 		title: 'Luppo - App de seguridad para condominios',
-		imageUrl: 'https://i.imgur.com/Vz81GEl.png',
-		description: 'A Project to bootstrap your next Gatsby + Bulma site.',
-		keywords: `Web developer, Web, Developer, CSS, HTML, JS, Javascript, Gatsby, Bulma Developer, CSS3, HTML5, Seo, Starter`,
-		twitter: 'https://twitter.com/amanhimself',
-		github: `https://github.com/amandeepmittal`,
-		medium: 'https://medium.com/@amanhimself',
-		gatsby: 'https://www.gatsbyjs.org/',
-		bulma: 'https://bulma.io/',
-		siteUrl: `https://www.example.com`,
+		author: 'Luppo APP',
+		description: 'La mejor APP de seguridad para condominios. Permite gestionar de manera segura los accesos y salidas de las personas que visitan tu casa.',
+		siteUrl: 'https://luppo.mx',
+		facebook: 'https://facebook.com/',
+
 	},
+	pathPrefix: "/luppo",
 	plugins: [
 		'gatsby-plugin-react-helmet',
 		{
@@ -20,6 +17,7 @@ module.exports = {
 				path: `${__dirname}/src/`
 			}
 		},
+		`gatsby-plugin-netlify`,
 		'gatsby-transformer-sharp',
 		'gatsby-plugin-sharp',
 		{

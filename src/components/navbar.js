@@ -10,7 +10,7 @@ const Navbar = () => (
 		<div className="column left">
 		<Link to="/" className="navbar-item as-text-grey">Luppo</Link>
 		</div>
-		<div className="column center">
+		<div className="column center desktop">
 		<p>
 		<Link to="/caracteristicas" className="navbar-item has-text-black">Características</Link>
 		</p>

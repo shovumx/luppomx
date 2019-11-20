@@ -4,11 +4,17 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import {
   FaKey,
-  FaComments,
-  FaUserLock,
-  FaHourglassStart,
-  FaAtom,
-  FaRocket
+  FaCodeBranch,
+  FaExclamationCircle,
+  FaUserClock,
+  FaEnvelopeOpenText,
+  FaTruck,
+  FaFileSignature,
+  FaUsers,
+  FaUserShield,
+  FaUserSecret,
+  FaPhoneVolume,
+  FaClipboard
 } from "react-icons/fa";
 import Img from "gatsby-image";
 import { useStaticQuery, graphql } from "gatsby";
@@ -29,10 +35,39 @@ export default () => {
           }
         }
       }
+      imageTwo: file(relativePath: { eq: "images/informacion.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            aspectRatio
+            sizes
+            base64
+            src
+            srcSet
+          }
+        }
+      }
+      imageThree: file(
+        relativePath: { eq: "images/SistemaAdministrativo.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            aspectRatio
+            sizes
+            base64
+            src
+            srcSet
+          }
+        }
+      }
     }
   `);
   return (
     <div>
+      <Helmet>
+        <title>Características | App de seguridad para condominios</title>
+        <meta name="description" content="Nuestra app de seguridad para condominios es ideal para gestionar entradas y salidas de visitas, proveedores y personal de servicio que visitan regularmente tu casa."></meta>
+        <meta name="robots" content="index,follow"></meta>
+      </Helmet>
       <Navbar />
       <div className="section">
         <div className="container">
@@ -58,8 +93,8 @@ export default () => {
                 <div className="message-header bg1">
                   <p>
                     Token digital{" "}
-                    <span className="icon is-large has-text-black">
-                      <FaKey />
+                    <span className="icon is-large has-text-white">
+                      <FaCodeBranch />
                     </span>
                   </p>
                 </div>
@@ -81,8 +116,8 @@ export default () => {
                 <div className="message-header bg2">
                   <p>
                     Botón de pánico silencioso{" "}
-                    <span className="icon is-large has-text-black">
-                      <FaKey />
+                    <span className="icon is-large has-text-white">
+                      <FaExclamationCircle />
                     </span>
                   </p>
                 </div>
@@ -100,7 +135,7 @@ export default () => {
               </article>
               <Img
                 fluid={data.imageOne.childImageSharp.fluid}
-                alt="A corgi smiling happily"
+                alt="Sistema de seguridad para condominios"
               />
             </div>
             <div className="column shake">
@@ -108,8 +143,8 @@ export default () => {
                 <div className="message-header bg3">
                   <p>
                     Control total de tus visitas{" "}
-                    <span className="icon is-large has-text-black">
-                      <FaKey />
+                    <span className="icon is-large has-text-white">
+                      <FaUserClock />
                     </span>
                   </p>
                 </div>
@@ -137,8 +172,8 @@ export default () => {
                 <div className="message-header bg4">
                   <p>
                     Gestión de paquetería{" "}
-                    <span className="icon is-large has-text-black">
-                      <FaKey />
+                    <span className="icon is-large has-text-white">
+                      <FaEnvelopeOpenText />
                     </span>
                   </p>
                 </div>
@@ -161,8 +196,8 @@ export default () => {
                 <div className="message-header bg5">
                   <p>
                     Proveedores y personal de servicio{" "}
-                    <span className="icon is-large has-text-black">
-                      <FaKey />
+                    <span className="icon is-large has-text-white">
+                      <FaTruck />
                     </span>
                   </p>
                 </div>
@@ -178,8 +213,8 @@ export default () => {
                 </div>
               </article>
               <Img
-                fluid={data.imageOne.childImageSharp.fluid}
-                alt="A corgi smiling happily"
+                fluid={data.imageTwo.childImageSharp.fluid}
+                alt="APP para mantener seguro un condominio"
               />
             </div>
             <div className="column shake">
@@ -187,8 +222,8 @@ export default () => {
                 <div className="message-header bg6">
                   <p>
                     Informe de seguridad{" "}
-                    <span className="icon is-large has-text-black">
-                      <FaKey />
+                    <span className="icon is-large has-text-white">
+                      <FaFileSignature />
                     </span>
                   </p>
                 </div>
@@ -202,7 +237,6 @@ export default () => {
                   necesario, la del condominio.
                 </div>
               </article>
-              
             </div>
           </div>
         </div>
@@ -211,11 +245,11 @@ export default () => {
           <div className="columns">
             <div className="column shake">
               <article className="message">
-                <div className="message-header bg4">
+                <div className="message-header bg2">
                   <p>
                     Toda tu familia{" "}
-                    <span className="icon is-large has-text-black">
-                      <FaKey />
+                    <span className="icon is-large has-text-white">
+                      <FaUsers />
                     </span>
                   </p>
                 </div>
@@ -233,11 +267,11 @@ export default () => {
             </div>
             <div className="column shake">
               <article className="message">
-                <div className="message-header bg5">
+                <div className="message-header bg4">
                   <p>
                     Visitas pre-autorizadas{" "}
-                    <span className="icon is-large has-text-black">
-                      <FaKey />
+                    <span className="icon is-large has-text-white">
+                      <FaUserShield />
                     </span>
                   </p>
                 </div>
@@ -253,8 +287,8 @@ export default () => {
                 </div>
               </article>
               <Img
-                fluid={data.imageOne.childImageSharp.fluid}
-                alt="A corgi smiling happily"
+                fluid={data.imageThree.childImageSharp.fluid}
+                alt="App para permitir el acceso a visitas"
               />
             </div>
             <div className="column shake">
@@ -262,8 +296,8 @@ export default () => {
                 <div className="message-header bg6">
                   <p>
                     Privacidad al máximo{" "}
-                    <span className="icon is-large has-text-black">
-                      <FaKey />
+                    <span className="icon is-large has-text-white">
+                      <FaUserSecret />
                     </span>
                   </p>
                 </div>
@@ -303,18 +337,21 @@ export default () => {
                 <div className="message-header bg4">
                   <p>
                     1. Gestión de accesos y salidas{" "}
-                    <span className="icon is-large has-text-black">
+                    <span className="icon is-large has-text-white">
                       <FaKey />
                     </span>
-                    
                   </p>
-                  
                 </div>
                 <div class="message-body">
-                  Gestiona desde la comodidad de tu celular -vía la app o el bot con inteligencia artificial- todos los accesos a tu casa (visitas, proveedores, personal de servicio), así como tu paquetería. Con este servicio también tendrás acceso a tu Token Digital y al botón de pánico silencioso. 
-                  <p className="has-text-black"><span className="magical">$20 pesos al mes por casa</span></p>
+                  Gestiona desde la comodidad de tu celular -vía la app o el bot
+                  con inteligencia artificial- todos los accesos a tu casa
+                  (visitas, proveedores, personal de servicio), así como tu
+                  paquetería. Con este servicio también tendrás acceso a tu
+                  Token Digital y al botón de pánico silencioso.
+                  <p className="has-text-black">
+                    <span className="magical">$20 pesos al mes por casa</span>
+                  </p>
                 </div>
-                
               </article>
             </div>
             <div className="column shake">
@@ -322,17 +359,20 @@ export default () => {
                 <div className="message-header bg5">
                   <p>
                     2. Conmutador digital{" "}
-                    <span className="icon is-large has-text-black">
-                      <FaKey />
+                    <span className="icon is-large has-text-white">
+                      <FaPhoneVolume />
                     </span>
                   </p>
                 </div>
                 <div class="message-body">
-                  Tu personal de seguridad solo necesita un celular para hacer uso de nuestro novedoso conmutador digital. De esta forma, cuando quiera hablarte, solo necesitará escribir tu número de casa y nuestro sistema se encarga de que la llamada llegue a tu casa o celular sin ningún problema.
-                  <p className="has-text-black"><span className="magical">+$10 pesos al mes por casa</span></p>
-
-
-
+                  Tu personal de seguridad solo necesita un celular para hacer
+                  uso de nuestro novedoso conmutador digital. De esta forma,
+                  cuando quiera hablarte, solo necesitará escribir tu número de
+                  casa y nuestro sistema se encarga de que la llamada llegue a
+                  tu casa o celular sin ningún problema.
+                  <p className="has-text-black">
+                    <span className="magical">+$10 pesos al mes por casa</span>
+                  </p>
                 </div>
               </article>
             </div>
@@ -340,23 +380,29 @@ export default () => {
               <article className="message">
                 <div className="message-header bg6">
                   <p>
-                  3. Administración inteligente{" "}
-                    <span className="icon is-large has-text-black">
-                      <FaKey />
+                    3. Administración inteligente{" "}
+                    <span className="icon is-large has-text-white">
+                      <FaClipboard />
                     </span>
                   </p>
                 </div>
                 <div class="message-body">
-                  ¿Batallan para la gestión de cuotas de mantenimiento o agua? Nosotros te podemos ayudar a conectar nuestra app con tu cuenta de banco para que registre automáticamente los depósitos, así nada más tienes que corroborar de que se trata de la casa en cuestión y listo. Con esto se puede consultar el estado de ingresos y egresos del condominio al momento y sin necesidad de actualizarlo. También se puede programar un envío mensual automático del resumen del mes.
-                  <p className="has-text-black"><span className="magical">+$5 pesos al mes por casa</span></p>
-
-
+                  ¿Batallan para la gestión de cuotas de mantenimiento o agua?
+                  Nosotros te podemos ayudar a conectar nuestra app con tu
+                  cuenta de banco para que registre automáticamente los
+                  depósitos, así nada más tienes que corroborar de que se trata
+                  de la casa en cuestión y listo. Con esto se puede consultar el
+                  estado de ingresos y egresos del condominio al momento y sin
+                  necesidad de actualizarlo. También se puede programar un envío
+                  mensual automático del resumen del mes.
+                  <p className="has-text-black">
+                    <span className="magical">+$5 pesos al mes por casa</span>
+                  </p>
                 </div>
               </article>
             </div>
           </div>
         </div>
-
       </div>
 
       <Footer />

@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from 'react-helmet';
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { Link } from "gatsby"
@@ -10,9 +11,9 @@ import "../components/columns.scss";
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      imageOne: file(relativePath: { eq: "images/celular.jpg" }) {
+      imageOne: file(relativePath: { eq: "images/organizacion.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 1000) {
             aspectRatio
             sizes
             base64
@@ -21,9 +22,20 @@ export default () => {
           }
         }
       }
-      imageTwo: file(relativePath: { eq: "images/FondoBase.jpg" }) {
+      imageTwo: file(relativePath: { eq: "images/Seguridad.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 1000) {
+            aspectRatio
+            sizes
+            base64
+            src
+            srcSet
+          }
+        }
+      }
+      imageThree: file(relativePath: { eq: "images/Comuncacion.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
             aspectRatio
             sizes
             base64
@@ -36,6 +48,13 @@ export default () => {
   `);
   return (
     <div>
+            <Helmet>
+        <title>Este es un post prueba</title>
+        <meta name="description" content="esta es la descripción prueba"></meta>
+        <meta name="robots" content="index,follow"></meta>
+        
+        
+      </Helmet>
       <Navbar />
       <section>
         <div className="container">
@@ -52,7 +71,7 @@ export default () => {
             <div className="column"></div>
             <div className="column is-two-thirds">
               <Img
-                fluid={data.imageTwo.childImageSharp.fluid}
+                fluid={data.imageOne.childImageSharp.fluid}
                 alt="Ola k dise"
               />
 
@@ -80,8 +99,8 @@ export default () => {
             <div className="column"></div>
             <div className="column is-two-thirds">
               <Img
-                fluid={data.imageOne.childImageSharp.fluid}
-                alt="A corgi smiling happily"
+                fluid={data.imageTwo.childImageSharp.fluid}
+                alt="ola k ase"
               />
 
               <div className="notification">
@@ -108,8 +127,8 @@ export default () => {
             <div className="column"></div>
             <div className="column is-two-thirds">
               <Img
-                fluid={data.imageOne.childImageSharp.fluid}
-                alt="A corgi smiling happily"
+                fluid={data.imageThree.childImageSharp.fluid}
+                alt="Ola k cuenta"
               />
 
               <div className="notification">

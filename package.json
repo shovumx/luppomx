@@ -1,16 +1,18 @@
 {
-  "name": "gatsby-bulma-quickstart",
-  "description": "A Project to bootstrap your next Gatsby + Bulma site.",
+  "name": "Luppo",
+  "description": "La mejor APP de seguridad para condominios en Mexico",
   "version": "1.8.0",
-  "author": "Aman Mittal <amandeepmittal@live.com>",
+  "author": "Luppo",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "bulma": "^0.8.0",
     "gatsby": "^2.16.5",
     "gatsby-image": "^2.2.33",
+    "gatsby-plugin-git": "0.0.1-4",
     "gatsby-plugin-google-analytics": "^2.1.23",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^2.2.23",
+    "gatsby-plugin-netlify": "^2.1.25",
     "gatsby-plugin-offline": "^3.0.16",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.1.13",
@@ -40,9 +42,11 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "google-fonts-plugin": "^5.0.2",
     "prettier": "^1.14.2"
   },

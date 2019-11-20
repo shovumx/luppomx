@@ -10,9 +10,8 @@ export default () => (
 					siteMetadata {
 						title
 						author
-						imageUrl
 						description
-						keywords
+						
 					}
 				}
 			}
@@ -24,7 +23,7 @@ export default () => (
 					content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
 				/>
 				<meta name="description" content={data.site.siteMetadata.description} />
-				<meta name="keywords" content={data.site.siteMetadata.keywords} />
+				
 				<title>{data.site.siteMetadata.title}</title>
 				<html lang="es" />
 				{/* Google / Search Engine Meta Tags */}
@@ -33,7 +32,21 @@ export default () => (
 					itemprop="description"
 					content={data.site.siteMetadata.description}
 				/>
-				<meta itemprop="image" content={data.site.siteMetadata.imageUrl} /> />
+				
+				<meta name="robots" content="index,follow"></meta>
+				{/* <!-- Open Graph / Facebook --> */}
+				<meta property="og:type" content="website" />
+            <meta property="og:url" content="https://luppo.mx/" />
+            <meta property="og:title" content="Luppo - App de seguridad para condominios" />
+            <meta property="og:description" content="La mejor APP de seguridad para condominios. Gestiona de manera segura accesos y salidas de las personas que visitan tu casa." />
+            <meta property="og:image" content="http://myawesomewebsite.com/facebookimage.png" />
+            {/* <!-- Twitter --> */}
+            <meta property="twitter:card" content="summary_large_image" />
+            <meta property="twitter:url" content="http://luppo.mx/" />
+            <meta property="twitter:title" content="Luppo - App de seguridad para condominios" />
+            <meta property="twitter:description" content="La mejor APP de seguridad para condominios. Gestiona de manera segura accesos y salidas de las personas que visitan tu casa." />
+            <meta property="twitter:image" content="http://myawesomewebsite.com/twitterimage.png" />
+
 			</Helmet>
 		)}
 	/>
