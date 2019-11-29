@@ -1,36 +1,36 @@
-import React from "react"
+import React from "react";
 import Helmet from "../components/helmet";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import MyForm from "../components/formulario";
+
 
 import "../components/style.scss";
 
 export default () => (
+  <div>
+         <Helmet>
+        <title>Contacto | App de seguridad para condominios</title>
+        <meta name="description" content="¿Quieres una cotización o resolver dudas? Con gusto podemos platicarte sobre nuestra app y todas las ventajas de seguridad que tiene."></meta>
+        <meta name="robots" content="index,follow"></meta>
+      </Helmet>
+      <Navbar />
     <div>
-        <Navbar />
+      <section className="section sa">
         <div className="container">
-        
-<form method="post" action="#">
-  <label>
-    Name
-    <input type="text" name="name" id="name" />
-  </label>
-  <label>
-    Email
-    <input type="email" name="email" id="email" />
-  </label>
-  <label>
-    Subject
-    <input type="text" name="subject" id="subject" />
-  </label>
-  <label>
-    Message
-    <textarea name="message" id="message" rows="5" />
-  </label>
-  <button type="submit">Send</button>
-  <input type="reset" value="Clear" />
-</form>
+          <div className="columns">
+            <div className="column"></div>
+            <div className="column is-three-quarters">
+              <h2 className="title is-size-2 has-text-centered has-text-weight-bold">
+                ¿Quieres más información sobre nosotros?
+              </h2>
+              <MyForm />
+            </div>
+            <div className="column"></div>
+          </div>
         </div>
-        <Footer />
+      </section>
     </div>
-)
+    <Footer />
+  </div>
+);

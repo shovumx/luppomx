@@ -49,8 +49,8 @@ export default () => {
   return (
     <div>
             <Helmet>
-        <title>Este es un post prueba</title>
-        <meta name="description" content="esta es la descripción prueba"></meta>
+        <title>Blog sobre consejos de seguridad para condominios</title>
+        <meta name="description" content="¿Quieres vivir en un condominio más seguro? Nosotros te damos una lista de consejos básicos para que puedas aumentar el nivel de seguridad de tu condominio."></meta>
         <meta name="robots" content="index,follow"></meta>
         
         
@@ -72,21 +72,17 @@ export default () => {
             <div className="column is-two-thirds">
               <Img
                 fluid={data.imageOne.childImageSharp.fluid}
-                alt="Ola k dise"
+                alt="Consejos de seguridad para condominios"
               />
 
               <div className="notification">
-                <h2 className="title is-3 has-text-weight">Título</h2>
+                <h2 className="title is-3 has-text-weight">¿Ya conoces los protocolos de emergencia de tu empresa de seguridad?</h2>
                 <p className="title is-5">
-                  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit
-                  lorem ipsum dolor. <strong>Pellentesque risus mi</strong>,
-                  tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus
-                  ac ex sit amet fringilla. Nullam gravida purus diam, et dictum{" "}
-                  <a>felis venenatis</a> efficitur. Sit amet, consectetur
-                  adipiscing elit.
+                  ¿Cada cuándo revisas con tu empresa de seguridad sus protocolos de seguridad para casos de emergencia? Es muy importante que seguido te reúnas con ellos para afinarlos.
+
                 </p>
                 
-                <Link to="/post-prueba" className="button is-primary is-rounded">Leer más</Link>
+                <Link to="/protocolo-emergencias-seguridad-condominio" className="button is-primary is-rounded" aria-label="Procolo de seguridad para condominio">Leer más</Link>
                 
               </div>
             </div>
@@ -94,62 +90,7 @@ export default () => {
           </div>
         </div>
       
-        <div className="container">
-          <div className="columns">
-            <div className="column"></div>
-            <div className="column is-two-thirds">
-              <Img
-                fluid={data.imageTwo.childImageSharp.fluid}
-                alt="ola k ase"
-              />
 
-              <div className="notification">
-                <h2 className="title is-3 has-text-weight">Título</h2>
-                <p className="title is-5">
-                  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit
-                  lorem ipsum dolor. <strong>Pellentesque risus mi</strong>,
-                  tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus
-                  ac ex sit amet fringilla. Nullam gravida purus diam, et dictum{" "}
-                  <a>felis venenatis</a> efficitur. Sit amet, consectetur
-                  adipiscing elit.
-                </p>
-                <button className="button is-primary is-rounded">
-                  Leer más
-                </button>
-              </div>
-            </div>
-            <div className="column"></div>
-          </div>
-        </div>
- 
-        <div className="container">
-          <div className="columns">
-            <div className="column"></div>
-            <div className="column is-two-thirds">
-              <Img
-                fluid={data.imageThree.childImageSharp.fluid}
-                alt="Ola k cuenta"
-              />
-
-              <div className="notification">
-                <h2 className="title is-3 has-text-weight">Título</h2>
-                <p className="title is-5">
-                  Primar lorem ipsum dolor sit amet, consectetur adipiscing elit
-                  lorem ipsum dolor. <strong>Pellentesque risus mi</strong>,
-                  tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus
-                  ac ex sit amet fringilla. Nullam gravida purus diam, et dictum{" "}
-                  <a>felis venenatis</a> efficitur. Sit amet, consectetur
-                  adipiscing elit.
-                </p>
-                <button className="button is-primary is-rounded">
-                  Leer más
-                </button>
-              </div>
-            </div>
-            <div className="column"></div>
-          </div>
-        </div>
- 
       </section>
       <Footer />
     </div>

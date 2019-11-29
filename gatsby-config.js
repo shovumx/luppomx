@@ -1,8 +1,8 @@
 module.exports = {
 	siteMetadata: {
-		title: 'Luppo - App de seguridad para condominios',
+		title: 'App de seguridad para condominios | Luppo',
 		author: 'Luppo APP',
-		description: 'La mejor APP de seguridad para condominios. Permite gestionar de manera segura los accesos y salidas de las personas que visitan tu casa.',
+		description: 'La mejor APP de seguridad para condominios en México. Permite gestionar de manera segura los accesos y salidas de las personas que visitan tu casa. Y mucho más.',
 		siteUrl: 'https://luppo.mx',
 		facebook: 'https://facebook.com/',
 

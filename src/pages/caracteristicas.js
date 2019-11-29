@@ -93,7 +93,7 @@ export default () => {
                 <div className="message-header bg1">
                   <p>
                     Token digital{" "}
-                    <span className="icon is-large has-text-white">
+                    <span className="icon is-large has-text-white fa-4x">
                       <FaCodeBranch />
                     </span>
                   </p>
@@ -116,7 +116,7 @@ export default () => {
                 <div className="message-header bg2">
                   <p>
                     Botón de pánico silencioso{" "}
-                    <span className="icon is-large has-text-white">
+                    <span className="icon is-large has-text-white fa-4x">
                       <FaExclamationCircle />
                     </span>
                   </p>
@@ -135,7 +135,7 @@ export default () => {
               </article>
               <Img
                 fluid={data.imageOne.childImageSharp.fluid}
-                alt="Sistema de seguridad para condominios"
+                alt="App de seguridad para condominios"
               />
             </div>
             <div className="column shake">
@@ -143,7 +143,7 @@ export default () => {
                 <div className="message-header bg3">
                   <p>
                     Control total de tus visitas{" "}
-                    <span className="icon is-large has-text-white">
+                    <span className="icon is-large has-text-white fa-4x">
                       <FaUserClock />
                     </span>
                   </p>
@@ -172,7 +172,7 @@ export default () => {
                 <div className="message-header bg4">
                   <p>
                     Gestión de paquetería{" "}
-                    <span className="icon is-large has-text-white">
+                    <span className="icon is-large has-text-white fa-4x">
                       <FaEnvelopeOpenText />
                     </span>
                   </p>
@@ -196,7 +196,7 @@ export default () => {
                 <div className="message-header bg5">
                   <p>
                     Proveedores y personal de servicio{" "}
-                    <span className="icon is-large has-text-white">
+                    <span className="icon is-large has-text-white fa-4x">
                       <FaTruck />
                     </span>
                   </p>
@@ -222,7 +222,7 @@ export default () => {
                 <div className="message-header bg6">
                   <p>
                     Informe de seguridad{" "}
-                    <span className="icon is-large has-text-white">
+                    <span className="icon is-large has-text-white fa-4x">
                       <FaFileSignature />
                     </span>
                   </p>
@@ -248,7 +248,7 @@ export default () => {
                 <div className="message-header bg2">
                   <p>
                     Toda tu familia{" "}
-                    <span className="icon is-large has-text-white">
+                    <span className="icon is-large has-text-white fa-4x">
                       <FaUsers />
                     </span>
                   </p>
@@ -270,7 +270,7 @@ export default () => {
                 <div className="message-header bg4">
                   <p>
                     Visitas pre-autorizadas{" "}
-                    <span className="icon is-large has-text-white">
+                    <span className="icon is-large has-text-white fa-4x">
                       <FaUserShield />
                     </span>
                   </p>
@@ -296,7 +296,7 @@ export default () => {
                 <div className="message-header bg6">
                   <p>
                     Privacidad al máximo{" "}
-                    <span className="icon is-large has-text-white">
+                    <span className="icon is-large has-text-white fa-4x">
                       <FaUserSecret />
                     </span>
                   </p>
@@ -321,10 +321,10 @@ export default () => {
           <div className="columns">
             <div className="column"></div>
             <div className="column is-three-quarters">
-              <h1 className="is-size-1 has-text-centered">
+              <h2 className="is-size-1 has-text-centered">
                 ¿Cuáles son nuestros{" "}
                 <span className="magical">paquetes y precios?</span>
-              </h1>
+              </h2>
             </div>
             <div className="column"></div>
           </div>
@@ -337,7 +337,7 @@ export default () => {
                 <div className="message-header bg4">
                   <p>
                     1. Gestión de accesos y salidas{" "}
-                    <span className="icon is-large has-text-white">
+                    <span className="icon is-large has-text-white fa-4x">
                       <FaKey />
                     </span>
                   </p>
@@ -359,7 +359,7 @@ export default () => {
                 <div className="message-header bg5">
                   <p>
                     2. Conmutador digital{" "}
-                    <span className="icon is-large has-text-white">
+                    <span className="icon is-large has-text-white fa-4x">
                       <FaPhoneVolume />
                     </span>
                   </p>
@@ -381,7 +381,7 @@ export default () => {
                 <div className="message-header bg6">
                   <p>
                     3. Administración inteligente{" "}
-                    <span className="icon is-large has-text-white">
+                    <span className="icon is-large has-text-white fa-4x">
                       <FaClipboard />
                     </span>
                   </p>

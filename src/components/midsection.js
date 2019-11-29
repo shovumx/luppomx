@@ -19,7 +19,7 @@ const Midsection = () => (
         <div className="columns">
           <div className="column shake">
             <article className="notification one">
-              <span className="icon is-large has-text-black">
+              <span className="icon is-large has-text-black fa-4x">
                 <FaKey />
               </span>
               <p className="is-size-3">ID Digital </p>
@@ -33,7 +33,7 @@ const Midsection = () => (
           </div>
           <div className="column shake">
             <article className="notification two">
-              <span className="icon is-large has-text-black">
+              <span className="icon is-large has-text-black fa-4x">
                 <FaComments />
               </span>
               <p className="is-size-3">Notificaciones </p>
@@ -47,7 +47,7 @@ const Midsection = () => (
           </div>
           <div className="column shake">
             <article className="notification three">
-              <span className="icon is-large has-text-black">
+              <span className="icon is-large has-text-black fa-4x">
                 <FaRocket />
               </span>
               <p className="is-size-3">Multiplataforma </p>
@@ -64,7 +64,7 @@ const Midsection = () => (
         <div className="columns">
           <div className="column shake">
             <article className="notification four">
-              <span className="icon is-large has-text-black">
+              <span className="icon is-large has-text-black fa-4x">
                 <FaUserLock />
               </span>
               <p className="is-size-3">100% Privado </p>              
@@ -77,7 +77,7 @@ const Midsection = () => (
           </div>
           <div className="column shake">
             <article className="notification five">
-              <span className="icon is-large has-text-black">
+              <span className="icon is-large has-text-black fa-4x">
                 <FaHourglassStart />
               </span>
               <p className="is-size-3">Eficiencia</p>
@@ -91,7 +91,7 @@ const Midsection = () => (
           </div>
           <div className="column shake">
             <article className="notification six">
-              <span className="icon is-large has-text-black">
+              <span className="icon is-large has-text-black fa-4x">
                 <FaAtom />
               </span>
               <p className="is-size-3">Innovación </p>
