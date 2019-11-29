@@ -25,7 +25,7 @@ export default () => {
     query {
       imageThree: file(relativePath: { eq: "images/celular.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 1200) {
             aspectRatio
             sizes
             base64
@@ -36,7 +36,7 @@ export default () => {
       }
       imageFour: file(relativePath: { eq: "images/informacion.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 1200) {
             aspectRatio
             sizes
             base64
@@ -49,7 +49,7 @@ export default () => {
         relativePath: { eq: "images/SistemaAdministrativo.jpg" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 1200) {
             aspectRatio
             sizes
             base64
@@ -189,7 +189,7 @@ export default () => {
           <div className="columns">
             <div className="column"></div>
             <div className="column is-two-thirds">
-              <h2 className="title is-3 has-text-grey-dark">Características</h2>
+              <h2 className="title is-3 has-text-grey-dark has-text-centered">Características</h2>
               <p className="title is-5 has-text-grey-dark">
                 ¿Sabías que el punto más débil en la seguridad de un condominio
                 es la{" "}

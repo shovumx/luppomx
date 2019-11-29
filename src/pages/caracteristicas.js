@@ -74,7 +74,7 @@ export default () => {
           <div className="columns">
             <div className="column"></div>
             <div className="column is-three-quarters">
-              <h1 className="is-size-1 has-text-centered">
+              <h1 className="is-size-2 has-text-centered">
                 ¿Qué nos hace ser la mejor{" "}
                 <span className="magical">
                   app de seguridad para condominios
