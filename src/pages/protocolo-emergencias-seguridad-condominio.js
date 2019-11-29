@@ -189,9 +189,9 @@ export default () => {
                 ¿Cuánto tiempo vale la tranquilidad de tu familia? Y reuerda, cuenta con nosotros como tus mejores alidados con nuestra               <Link
                 to="/"
                 className="is-primary"
-                alt="App de seguridad para condominios y fraccionamientos"
+                alt="App para registrar visitas en condominios y fraccionamientos"
               >
-                app de seguridad para condominios y fraccionamientos.
+                app para gestionar visitas en condominios y fraccionamientos.
               </Link>{" "}
               </p>
             </div>

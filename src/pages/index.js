@@ -77,30 +77,29 @@ export default () => {
                 <p className="is-size-5">
                   Cada residente tiene una identificación digital que cambia con
                   el tiempo. Gracias a esto, el personal de seguridad puede
-                  corroborar fácilmente que es residente del fraccionamiento aunque venga caminando
-                  o en Uber.{" "}
+                  corroborar fácilmente que es residente del fraccionamiento
+                  aunque venga caminando o en Uber.{" "}
                 </p>
               </article>
             </div>
             <div className="column shake">
               <article className="notification two">
                 <span className="icon is-large has-text-black">
-                  <FaComments size="fa-4x"/>
+                  <FaComments size="fa-4x" />
                 </span>
                 <p className="is-size-3">Notificaciones </p>
                 <p className="is-size-5">
                   Recibe notificaciones junto a toda tu familia para autorizar o
-                  rechazar accesos a tu casa desde tu celular. También sabrás
-                  cuando tus visitas, proveedores o personal de servicio se
-                  retiran del condominio.
+                  rechazar accesos de visitantes a tu casa desde tu celular.
+                  También sabrás cuando tus visitas, proveedores o personal de
+                  servicio se retiran del condominio.
                 </p>
               </article>
-             
             </div>
             <div className="column shake">
               <article className="notification three">
                 <span className="icon is-large has-text-black">
-                  <FaRocket size="fa-4x"/>
+                  <FaRocket size="fa-4x" />
                 </span>
                 <p className="is-size-3">Multiplataforma </p>
                 <p className="is-size-5">
@@ -112,24 +111,23 @@ export default () => {
             </div>
           </div>
           <div className="columns">
-              <div className="column"></div>
-              <div className="column is-half">
+            <div className="column"></div>
+            <div className="column is-half">
               <Img
                 fluid={data.imageFour.childImageSharp.fluid}
-                alt="App de seguridad para condominios y fraccionamientos"
+                alt="App para gestionar visitas en condominios y fraccionamientos"
               />
-
-              </div>
-              <div className="column"></div>
             </div>
+            <div className="column"></div>
+          </div>
         </div>
-        
+
         <div>
           <div className="columns">
             <div className="column shake">
               <article className="notification four">
                 <span className="icon is-large has-text-black">
-                  <FaUserLock size="fa-4x"/>
+                  <FaUserLock size="fa-4x" />
                 </span>
                 <p className="is-size-3">100% Privado </p>
                 <p className="is-size-5">
@@ -143,24 +141,23 @@ export default () => {
             <div className="column shake">
               <article className="notification five">
                 <span className="icon is-large has-text-black">
-                  <FaHourglassStart size="fa-4x"/>
+                  <FaHourglassStart size="fa-4x" />
                 </span>
                 <p className="is-size-3">
                   Botón de pánico y emergencias médicas
                 </p>
                 <p className="is-size-5">
                   Cuando el tiempo es fundamental, nada mejor que un botón de
-                  pánico y otro de emergenicas médicas. En nuestra app, el guardia o cualquier residente
-                  puede detonar una alerta hacia todos sus vecinos para
-                  avisarles que algo malo está pasando.{" "}
+                  pánico y otro de emergenicas médicas. En nuestra app, el
+                  guardia o cualquier residente puede detonar una alerta hacia
+                  todos sus vecinos para avisarles que algo malo está pasando.{" "}
                 </p>
               </article>
-
             </div>
             <div className="column shake">
               <article className="notification six">
                 <span className="icon is-large has-text-black">
-                  <FaAtom size="fa-4x"/>
+                  <FaAtom size="fa-4x" />
                 </span>
                 <p className="is-size-3">Innovación </p>
                 <p className="is-size-5">
@@ -172,24 +169,24 @@ export default () => {
             </div>
           </div>
           <div className="columns">
-              <div className="column"></div>
-              <div className="column is-half">
+            <div className="column"></div>
+            <div className="column is-half">
               <Img
                 fluid={data.imageThree.childImageSharp.fluid}
                 alt="Control de accesos para condominios"
               />
-
-              </div>
-              <div className="column"></div>
             </div>
-
+            <div className="column"></div>
+          </div>
         </div>
 
         <div>
           <div className="columns">
             <div className="column"></div>
             <div className="column is-two-thirds">
-              <h2 className="title is-3 has-text-grey-dark has-text-centered">Características de nuestra app</h2>
+              <h2 className="title is-3 has-text-grey-dark has-text-centered">
+                Características de nuestra app
+              </h2>
               <p className="title is-5 has-text-grey-dark">
                 ¿Sabías que el punto más débil en la seguridad de un condominio
                 es la{" "}
@@ -214,22 +211,18 @@ export default () => {
                 Todas las características y precios
               </Link>
             </div>
-            <div className="column">
-            
-            </div>
+            <div className="column"></div>
           </div>
           <div className="columns">
-              <div className="column"></div>
-              <div className="column is-half">
+            <div className="column"></div>
+            <div className="column is-half">
               <Img
                 fluid={data.imageFive.childImageSharp.fluid}
                 alt="Botón de pánico para condominios"
               />
-
-              </div>
-              <div className="column"></div>
             </div>
-
+            <div className="column"></div>
+          </div>
         </div>
       </div>
 

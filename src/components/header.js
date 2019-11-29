@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
     <container>
       <div className="is-overlay has-text-centered">
         <h1 className="subtitle is-4 has-text-black">
-          La App de seguridad para condominios #1
+          La App para gestionar visitas en condominios #1
         </h1>
         <h2 className="title is-1 has-text-grey-dark">LUPPO</h2>
         

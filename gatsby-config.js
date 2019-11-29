@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "App de seguridad para condominios y fraccionamientos | Luppo",
+    title: "App para registrar visitas en condominios y fraccionamientos | Luppo",
     author: "Luppo APP",
     description:
-      "La mejor APP de seguridad para condominios en México. Permite gestionar de manera segura los accesos y salidas de las personas que visitan tu casa. Y mucho más.",
+      "La mejor APP de seguridad para condominios en México. Permite gestionar de manera segura los accesos y salidas de las personas que visitan tu condominio. Y mucho más.",
     siteUrl: "https://luppo.mx",
     facebook: "https://facebook.com/"
   },
@@ -53,12 +53,6 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-150522236-1"
-      }
-    },
-    {
-      resolve: `gatsby-plugin-facebook-pixel`,
-      options: {
-        pixelId: "763077254156544"
       }
     },
     `gatsby-plugin-sitemap`,
