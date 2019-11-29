@@ -66,7 +66,7 @@ export default () => {
       <Navbar />
       <Header />
       <div>
-        <div className="container"  id="informacion">
+        <div id="informacion">
           <div className="columns">
             <div className="column shake">
               <article className="notification one">
@@ -77,7 +77,7 @@ export default () => {
                 <p className="is-size-5">
                   Cada residente tiene una identificación digital que cambia con
                   el tiempo. Gracias a esto, el personal de seguridad puede
-                  corroborar fácilmente que es residente aunque venga caminando
+                  corroborar fácilmente que es residente del fraccionamiento aunque venga caminando
                   o en Uber.{" "}
                 </p>
               </article>
@@ -92,7 +92,7 @@ export default () => {
                   Recibe notificaciones junto a toda tu familia para autorizar o
                   rechazar accesos a tu casa desde tu celular. También sabrás
                   cuando tus visitas, proveedores o personal de servicio se
-                  retiran del Condominio.
+                  retiran del condominio.
                 </p>
               </article>
              
@@ -116,7 +116,7 @@ export default () => {
               <div className="column is-half">
               <Img
                 fluid={data.imageFour.childImageSharp.fluid}
-                alt="App de seguridad para condominios"
+                alt="App de seguridad para condominios y fraccionamientos"
               />
 
               </div>
@@ -124,7 +124,7 @@ export default () => {
             </div>
         </div>
         
-        <div className="container">
+        <div>
           <div className="columns">
             <div className="column shake">
               <article className="notification four">
@@ -150,7 +150,7 @@ export default () => {
                 </p>
                 <p className="is-size-5">
                   Cuando el tiempo es fundamental, nada mejor que un botón de
-                  pánico y otro de emergenicas médicas. Cualquier residente
+                  pánico y otro de emergenicas médicas. En nuestra app, el guardia o cualquier residente
                   puede detonar una alerta hacia todos sus vecinos para
                   avisarles que algo malo está pasando.{" "}
                 </p>
@@ -166,7 +166,7 @@ export default () => {
                 <p className="is-size-5">
                   Todo el tiempo estamos actualizando nuestra app para agregar
                   nuevas características que hagan todavía más seguro el
-                  Condominio donde vives con tu familia.
+                  fraccionamiento donde vives con tu familia.
                 </p>
               </article>
             </div>
@@ -185,15 +185,15 @@ export default () => {
 
         </div>
 
-        <div className="container">
+        <div>
           <div className="columns">
             <div className="column"></div>
             <div className="column is-two-thirds">
-              <h2 className="title is-3 has-text-grey-dark has-text-centered">Características</h2>
+              <h2 className="title is-3 has-text-grey-dark has-text-centered">Características de nuestra app</h2>
               <p className="title is-5 has-text-grey-dark">
                 ¿Sabías que el punto más débil en la seguridad de un condominio
                 es la{" "}
-                <span class="magical">
+                <span className="magical">
                   falta de protocolos confiables de comunicación entre
                   vigilantes y residentes?
                 </span>
@@ -209,6 +209,7 @@ export default () => {
               <Link
                 to="/caracteristicas"
                 className="button is-rounded is-primary is-outlined"
+                alt="Características de nuestra app de seguridad para condominios y fraccionamientos"
               >
                 Todas las características y precios
               </Link>

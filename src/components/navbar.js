@@ -14,10 +14,12 @@ const Navbar = () => (
 		<Link to="/caracteristicas" className="navbar-item has-text-black">Características</Link>
 		</p>
 		<p>
-		<Link to="/blog" className="navbar-item has-text-black">Blog</Link>
+		
 		</p>	
 		</div>
 		<div className="column right">
+			
+		<Link to="/blog" className="navbar-item has-text-black">Blog</Link>
 	<Link to="/contacto" className="navbar-item has-text-black">Contacto</Link>	
 		</div>
 	</div>

@@ -37,14 +37,14 @@ export default () => (
 				{/* <!-- Open Graph / Facebook --> */}
 				<meta property="og:type" content="website" />
             <meta property="og:url" content="https://luppo.mx/" />
-            <meta property="og:title" content="App de seguridad para condominios | Luppo " />
-            <meta property="og:description" content="La mejor APP de seguridad para condominios. Gestiona de manera segura accesos y salidas de las personas que visitan tu casa." />
+            <meta property="og:title" content="App de seguridad para condominios y fraccionamientos | Luppo " />
+            <meta property="og:description" content="La mejor APP de seguridad para condominios y fraccionamientos. Gestiona de manera segura accesos y salidas de las personas que visitan tu casa." />
             <meta property="og:image" content="http://myawesomewebsite.com/facebookimage.png" />
             {/* <!-- Twitter --> */}
             <meta property="twitter:card" content="summary_large_image" />
             <meta property="twitter:url" content="https://luppo.mx/" />
-            <meta property="twitter:title" content="Luppo - App de seguridad para condominios" />
-            <meta property="twitter:description" content="La mejor APP de seguridad para condominios. Gestiona de manera segura accesos y salidas de las personas que visitan tu casa." />
+            <meta property="twitter:title" content="Luppo - App de seguridad para condominios y fraccionamientos" />
+            <meta property="twitter:description" content="La mejor APP de seguridad para condominios y fraccionamientos. Gestiona de manera segura accesos y salidas de las personas que visitan tu casa." />
             <meta property="twitter:image" content="http://myawesomewebsite.com/twitterimage.png" />
 
 			</Helmet>
