@@ -10,7 +10,7 @@ import "../components/style.scss";
 export default () => (
   <div>
          <Helmet>
-        <title>Contacto | App de seguridad para condominios</title>
+        <title>APP para el control de visitas en condominios | Contacto</title>
         <meta name="description" content="¿Quieres una cotización o resolver dudas? Con gusto podemos platicarte sobre nuestra app y todas las ventajas de seguridad que tiene."></meta>
         <meta name="robots" content="index,follow"></meta>
       </Helmet>

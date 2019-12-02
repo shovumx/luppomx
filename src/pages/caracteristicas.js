@@ -64,7 +64,7 @@ export default () => {
   return (
     <div>
       <Helmet>
-        <title>Características | App para registrar visitas en condominios y fraccionamientos</title>
+        <title>APP para el control de visitas en condominios | Características</title>
         <meta name="description" content="Nuestra app de seguridad para condominios es ideal para gestionar entradas y salidas de visitas, proveedores y personal de servicio que visitan regularmente tu casa."></meta>
         <meta name="robots" content="index,follow"></meta>
       </Helmet>

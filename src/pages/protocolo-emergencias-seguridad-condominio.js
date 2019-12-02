@@ -39,7 +39,7 @@ export default () => {
   return (
     <div>
       <Helmet>
-        <title>Revisa tu protocolo de emergencias para condominios</title>
+        <title>Revisa tu protocolo de emergencias para condominios | Luppo </title>
         <meta
           name="description"
           content="El protocolo de emergencias sirve para actuar de manera adecuada en tu condominio cuando cada minuto que pasa es fundamental para evitar que pase a mayores."

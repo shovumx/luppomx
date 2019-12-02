@@ -44,7 +44,7 @@ const Footer = () => (
             </div>
           </div>
           <p className="is-size-7">
-            Luppo - La mejor app de seguridad para condominios y fraccionamientos. Todos los derechos
+            Luppo - La mejor app de control de visitas para condominios y fraccionamientos. Todos los derechos
             reservados. 2019
           </p>
 
