@@ -45,7 +45,7 @@ const Footer = () => (
           </div>
           <p className="is-size-7">
             Luppo - La mejor app de control de visitas para condominios y fraccionamientos. Todos los derechos
-            reservados. 2019
+            reservados. 2019. Tel/Whatsapp: 442 131 9447.
           </p>
 
           <article className="media center">

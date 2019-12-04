@@ -12,7 +12,7 @@ import "../components/blog.scss";
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      imageOne: file(relativePath: { eq: "images/SistemaAdministrativo.jpg" }) {
+      imageOne: file(relativePath: { eq: "images/protocolo_emergencias_condominio.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             aspectRatio
@@ -23,7 +23,18 @@ export default () => {
           }
         }
       }
-      imageTwo: file(relativePath: { eq: "images/Seguridad.jpg" }) {
+      imageTwo: file(relativePath: { eq: "images/protocolo_seguridad_condominio.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            aspectRatio
+            sizes
+            base64
+            src
+            srcSet
+          }
+        }
+      }
+      imageThree: file(relativePath: { eq: "images/socialmedia.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             aspectRatio
@@ -144,7 +155,7 @@ export default () => {
 
               <Img
                 fluid={data.imageOne.childImageSharp.fluid}
-                alt="Revisión del protocolo de seguridad de tu condominio"
+                alt="Revisión del protocolo de emergencias de tu condominio"
               />
 
               <h2 className="is-size-3 has-text-centered">
@@ -194,6 +205,10 @@ export default () => {
                 app para gestionar visitas en condominios y fraccionamientos.
               </Link>{" "}
               </p>
+              <Img
+                fluid={data.imageThree.childImageSharp.fluid}
+                alt="Protocolos de seguridad para condominios"
+              />
             </div>
             <div className="column"></div>
           </div>

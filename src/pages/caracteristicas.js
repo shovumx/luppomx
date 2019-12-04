@@ -24,7 +24,7 @@ import "../components/columns.scss";
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      imageOne: file(relativePath: { eq: "images/celular.jpg" }) {
+      imageOne: file(relativePath: { eq: "images/app_control_accesos.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 800) {
             aspectRatio
@@ -35,7 +35,7 @@ export default () => {
           }
         }
       }
-      imageTwo: file(relativePath: { eq: "images/informacion.jpg" }) {
+      imageTwo: file(relativePath: { eq: "images/control_accesos_visitas.png" }) {
         childImageSharp {
           fluid(maxWidth: 800) {
             aspectRatio
@@ -47,7 +47,7 @@ export default () => {
         }
       }
       imageThree: file(
-        relativePath: { eq: "images/SistemaAdministrativo.jpg" }
+        relativePath: { eq: "images/control_accesos_condominio.jpg" }
       ) {
         childImageSharp {
           fluid(maxWidth: 800) {

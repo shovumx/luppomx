@@ -13,8 +13,8 @@ const Header = ({ siteTitle }) => (
     
     <container>
       <div className="is-overlay has-text-centered">
-        <h1 className="subtitle is-4 has-text-black">
-          La APP más segura para controlar el acceso de visitas
+        <h1 className="subtitle is-5 has-text-black">
+          La APP más segura para controlar el acceso de visitas a tu condominio
         </h1>
         <h2 className="title is-1 has-text-grey-dark">LUPPO</h2>
         
