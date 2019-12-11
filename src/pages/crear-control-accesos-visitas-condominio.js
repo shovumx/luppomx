@@ -55,7 +55,7 @@ export default () => {
         </title>
         <meta
           name="description"
-          content="Elaborar un protocolo de control de accesos en tu condiminio puede ayudarte a evitar problemas de seguridad serios. Te damos varios consejos para hacerlo."
+          content="Elaborar un protocolo de control de accesos en tu condominio puede ayudarte a evitar problemas de seguridad serios. Te damos varios consejos para hacerlo."
         ></meta>
         <meta name="robots" content="index,follow"></meta>
       </Helmet>

@@ -5,7 +5,7 @@ module.exports = {
     description:
       "La mejor APP de seguridad para controlar de manera segura los accesos y salidas de las personas que visitan tu condominio. Y mucho más.",
     siteUrl: "https://luppo.mx",
-    facebook: "https://facebook.com/"
+    facebook: "https://facebook.com/LuppoAPP"
   },
   pathPrefix: "/luppo",
   plugins: [
@@ -29,6 +29,14 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://luppo.mx',
+        sitemap: 'https://luppo.mx/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
@@ -38,8 +46,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Makefolio",
-        short_name: "Makefolio",
+        name: "Luppo APP",
+        short_name: "Luppo",
         start_url: "/",
         background_color: "#2980b9",
         theme_color: "#2980b9",

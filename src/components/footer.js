@@ -47,6 +47,7 @@ const Footer = () => (
             Luppo - La mejor app de control de visitas para condominios y fraccionamientos. Todos los derechos
             reservados. 2019. Tel/Whatsapp: 442 131 9447.
           </p>
+          <p className="is-size-7">Diseño web hecho por <a href="https://equilibrio.studio">Equilibrio.Studio.</a></p>
 
           <article className="media center">
             <span className="icon">
